@@ -1,0 +1,23 @@
+{
+  "name": "frontend-workshop",
+  "version": "1.0.0",
+  "description": "Sample project for frontend + React workshop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html/"
+  },
+  "author": "Azeem Akhter",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}
