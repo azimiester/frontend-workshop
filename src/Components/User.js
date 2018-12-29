@@ -1,5 +1,4 @@
 import React from "react";
-import { userInfo } from "os";
 
 export default props => (
   <div>
