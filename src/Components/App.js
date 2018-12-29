@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import User from "./User";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +14,18 @@ class App extends Component {
     });
   }
   render() {
-    return <div>{JSON.stringify(this.state.data)}</div>;
+    const users = this.state.data;
+    return (
+      <div>
+        {users.map(user => (
+          <User
+            img={user.avatar}
+            firstName={user.first_name}
+            lastName={user.last_name}
+          />
+        ))}
+      </div>
+    );
   }
 }
 
